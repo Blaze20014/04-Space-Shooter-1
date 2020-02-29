@@ -27,7 +27,7 @@ func change_health(h):
 
 func change_score(s):
 	score += s
-	emit_signal("score_changed")		
+	emit_signal("score_changed")
 
 func die():
 	queue_free()

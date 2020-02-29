@@ -9,6 +9,7 @@ func _ready():
 	contact_monitor = true
 	set_max_contacts_reported(4)
 
+
 func _physics_process(delta):
 	var colliding = get_colliding_bodies()
 	for c in colliding:
@@ -19,7 +20,7 @@ func _physics_process(delta):
 		if c.name == "Player":
 			Player.change_health(-damage)
 		queue_free()
-
+		
 	if position.y > get_viewport_rect().size.y + 10:
 		queue_free()
 

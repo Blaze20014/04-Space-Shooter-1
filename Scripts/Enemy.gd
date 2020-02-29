@@ -43,4 +43,3 @@ func _on_Timer_timeout():
 		b.position = position
 		b.position.y += 25
 		get_node("/root/Game/Enemy Bullets").add_child(b)
-		
